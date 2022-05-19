@@ -21,7 +21,7 @@ from tensorflow.keras.models import load_model
 config = tf.compat.v1.ConfigProto(
         device_count = {'GPU': 0}
     )
-sess = tf.Session(config=config)
+sess = tf.compat.v1.Session(config=config)
 
 
 ########################
