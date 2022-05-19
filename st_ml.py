@@ -115,7 +115,7 @@ with header:
 
 with imageup:
     st.title('Upload Image')
-    uploaded_image = st.file_uploader('Upload an image', type=['png', 'jpeg'])
+    uploaded_image = st.file_uploader('Upload an image', type=["png", "jpg", "jpeg"])
     
 
     if uploaded_image is not None:
