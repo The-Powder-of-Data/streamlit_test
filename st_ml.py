@@ -15,7 +15,13 @@ from patchify import patchify, unpatchify
 import cv2
 from sklearn.preprocessing import MinMaxScaler
 from module.imports_smooth_tiled_predictions import predict_img_with_smooth_windowing
+import tensorflow as tf
 from tensorflow.keras.models import load_model
+
+config = tf.ConfigProto(
+        device_count = {'GPU': 0}
+    )
+sess = tf.Session(config=config)
 
 
 ########################
