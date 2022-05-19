@@ -8,7 +8,7 @@ from itertools import chain
 import matplotlib.pyplot as plt
 from PIL import Image 
 
-from google.cloud import storage
+#from google.cloud import storage
 
 from matplotlib import pyplot as plt
 from patchify import patchify, unpatchify
